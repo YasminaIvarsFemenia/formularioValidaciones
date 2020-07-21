@@ -1,0 +1,52 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario</title>
+    <link rel="stylesheet" type="text/css" href="style.css" media="all">
+</head>
+<body>
+<h4>Formulario</h4>
+    <form action="#" id="formulario" name="formulario" method="post" onsubmit="validar(this);">
+        <ul>
+           
+              <label for="nombre">Nombre:</label>
+              <input type="text" id="nombre" onblur="upperCase()" required/>
+           
+              <label for="Apellidos">Apellidos:</label>
+              <input type="text" id="apellidos" onblur="upperCase()" required/>
+    
+              <label for="edad">Edad:</label>
+              <input type="text" id="edad" />
+            
+                <label for="nif">Nif:</label>
+                <input type="text" id="nif"/>
+ 
+                <label for="Email">Email:</label>
+                <input type="text" id="email"/>
+
+                <label for="provincia">Provincia</label>
+                <select id="provincia">
+                    <option value="Madrid">Madrid</option> 
+                    <option value="Barcelona">Barcelona</option> 
+                    <option value="Sevilla">Sevilla<option>
+                    <option value="Zaragoza">Zaragoza</option> 
+                    <option value="Bilbao">Bilbao</option> 
+                    <option value="Valencia">Valencia</option> 
+                    <option value="Granada">Granada</option> 
+                    <option value="Lleida">Lleida</option>
+                </select>
+             
+           </ul>
+           <button id="limpiar" type="reset">Limpiar</button>
+
+           <button type="sumbit" onclick="registrar(event)">Enviar</button>
+
+           <div id="registro">
+            
+            
+          </div>
+    </form>
+</body>
+<script src="./form.js"></script>
+</html>
